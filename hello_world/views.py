@@ -7,4 +7,4 @@ def index(request):
     if request.method == "POST":
         return HttpResponse("You must have POSTed something")
     else:
-        return HttpResponse(request.method)
+        return HttpResponse("<h1>Hello, World!</h1><p>This is the index page.</p>")
